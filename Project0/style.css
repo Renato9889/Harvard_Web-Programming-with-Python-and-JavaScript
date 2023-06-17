@@ -57,3 +57,22 @@ html, body{
   border-color: blue;
   border-style: solid;
 }
+
+.links{
+  display: block;
+  position: absolute;
+  margin-top: 13px;
+  font-size: 14px;
+  top: 13px;
+  right: 13px;
+}
+.links a{
+  padding-right: 13px;
+  text-decoration: none;
+}
+.links a:hover{
+  text-decoration:underline;
+}
+.links a:focus{
+  color: black;
+}
