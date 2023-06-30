@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.containerone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #df4944;
+}
+.containertwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #55e21c;
+}
+h1 {
+    font-size: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+}
