@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Single Page!</title>
+    </head>
+    <style>
+        div{
+            display: none;
+        }
+    </style>
+    <script>
+        function showPage(page){
+            document.querySelectorAll('div').forEach(div =>{
+                div.style.display = 'none';
+            })
+            document.querySelector(`#${page}`).style.display = 'block';
+        }
+        
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelectorAll('button').forEach(button => {
+                button.onclick = function(){
+                    showPage(this.dataset.page);
+                }
+            })
+        })
+
+    </script>
+    <body>
+        <h1>HELLO GAY!!!</h1>
+        <button data-page="page1">Page 1</button>
+        <button data-page="page2">Page 2</button>
+        <button data-page="page3">Page 3</button>
+        <div id="page1" style="background-color: blue;">
+            <h2>Page 1</h2>
+        </div>
+        <div id="page2" style="background-color:red;">
+            <h2>Page 2</h2>
+        </div>
+        <div id="page3" style="background-color: yellow;">
+            <h2>Page 3</h2>
+        </div>
+    </body>
+</html>
